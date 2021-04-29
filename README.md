@@ -10,7 +10,7 @@ GitHub Action for purging an Azure CDN endpoint
   with:
     creds: ${{ secrets.AZURE_CREDENTIALS }}
 - name: Purge Azure CDN
-  uses: svanboxel/Purge Azure CDN@master
+  uses: svanboxel/azure-purge-cdn@master
   with:
     cdn_endpoint: your-endpoint.azureedge.net
     cdn_profile_name: your-cdn-profile-name
