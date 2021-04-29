@@ -1,6 +1,6 @@
 # Purge Azure CDN
 
-> GitHub Action for purging an Azure CDN endpoint
+GitHub Action for purging an Azure CDN endpoint
 
 ## Example Usage
 
@@ -19,7 +19,3 @@
   run: |
     az logout
 ```
-
-## license
-
-[MIT](/LICENSE) &copy; 2020 svanboxel
