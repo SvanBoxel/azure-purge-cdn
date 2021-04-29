@@ -12,7 +12,7 @@ GitHub Action for purging an Azure CDN endpoint
 - name: Purge Azure CDN
   uses: svanboxel/azure-purge-cdn@main
   with:
-    cdn_endpoint: your-endpoint.azureedge.net
+    cdn_endpoint: your-endpoint (without `.azureedge.net`)
     cdn_profile_name: your-cdn-profile-name
     resource_group: your-resource-group
 - name: Azure service principal logout
