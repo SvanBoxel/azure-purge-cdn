@@ -1,0 +1,21 @@
+name: 'Purge Azure CDN'
+description: 'GitHub Action for purging an Azure CDN endpoint'
+branding:
+  icon: 'check-circle'
+  color: 'white'
+inputs:
+  cdn_endpoint: 
+    description: 'CDN endpoint'
+    required: true
+  cdn_profile_name: 
+    description: 'Profile name of CDN'
+    required: true
+  resource_group: 
+    description: 'Resource Group Name'
+    required: true
+runs:
+  using: "composite"
+  steps: 
+    - run: |
+        az cdn endpoint purge -n ${{ inputs.cdn_endpoint }} --profile-name ${{ inputs.cdn_profile_name }} --content-paths "/*" --resource-group ${{ inputs.resource_group }} --no-wait
+      shell: bash
