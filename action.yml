@@ -1,8 +1,8 @@
 name: 'Purge Azure CDN'
 description: 'GitHub Action for purging an Azure CDN endpoint'
 branding:
-  icon: 'check-circle'
-  color: 'white'
+  icon: 'delete'
+  color: 'green'
 inputs:
   cdn_endpoint: 
     description: 'CDN endpoint'
